@@ -8,8 +8,6 @@ data = {
     "Price": [200000, 300000, 400000, 250000, 350000]
 }
 df = pd.DataFrame(data)
-
-# Step 3: Define input and output
 X = df[["Area", "Bedrooms", "Bathrooms"]]
 y = df["Price"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
